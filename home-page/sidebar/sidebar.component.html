@@ -1,0 +1,11 @@
+<div class="side-bar-container">
+  <div class="teacher">
+      <img src="{{teacher.avatar}}"/>
+      <span class="side-bar-menu-item-label" >{{teacher.first_name}} {{teacher.last_name}}</span>
+      <p>Teacher</p>
+  </div>
+    <div class="side-bar-menu" *ngFor ="let item of sidebar; let i = index" [class.active]="selectedIndex === i" (click)="setIndex(i)">
+          <fa-icon [icon]="item.icon"></fa-icon>
+          <span class="side-bar-menu-item-label" >{{item.itemName}}</span>
+  </div>
+</div>

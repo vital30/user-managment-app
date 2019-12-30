@@ -1,0 +1,52 @@
+
+
+fa-icon {
+    display: inline-block;
+    color: #A9B6BB;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.teacher{
+    margin: 40px auto 20px;
+    display: table;
+}
+
+.teacher img{
+    border-radius: 68px;
+    display: block;
+    margin-bottom: 15px;
+    border: 2px solid;
+    width: 100px;
+}
+
+.teacher span {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+
+.teacher p{
+    color: #566E83;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.side-bar-menu {
+    padding: 17px 5px 17px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #A9B6BB;
+}
+
+.side-bar-menu:hover {
+    border-right:3px solid #F19C28;
+    background-color: #223342;
+}
+
+.side-bar-menu.active {
+    border-right:3px solid #F19C28;
+    background-color: #223342;
+}

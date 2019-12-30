@@ -1,0 +1,27 @@
+.registerContainer {
+    width: 350px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    margin: 15% auto;
+}
+
+input.email {
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+}
+
+.goTologin {
+    margin-top: 50px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button{
+    cursor: pointer;
+}
+.text-danger{
+    color: red;
+    font-size: 12px;
+}
