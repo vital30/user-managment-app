@@ -1,0 +1,56 @@
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+  }
+
+  .userDetails-container {
+    border-left: 1px solid #8B8B8B;
+}
+
+.bg-image .blurImage {
+    display: block;
+    height: 460px;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.userImage {
+    width: 160px;
+    border-radius: 90px;
+    border: 2px solid #FFffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.userName{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EEF3FA;
+    font-weight: bold;
+}
+
+.details {
+    margin: 20px 0 0 40px;
+}
+
+.details label {
+    display: block;
+    margin-top: 25px;
+    color: #ACA29F;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.details span {
+    display: block;
+    color: #2F373E;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}

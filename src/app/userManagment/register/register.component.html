@@ -1,0 +1,28 @@
+<div class="registerContainer">
+    <h2>REGISTER</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" placeholder="Email" #email formControlName="email" class="email form-control" [ngClass]="{ 'is-invalid': submitted &amp;&amp; registerForm.controls.email.errors }" />
+                <div *ngIf="submitted &amp;&amp; registerForm.controls.email.errors" class="text-danger">
+                    <div *ngIf="registerForm.controls.email.errors.required">Email is required</div>
+                    <div *ngIf="registerForm.controls.email.errors.email">Email must be a valid email address</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" #password formControlName="password" class=" email form-control" [ngClass]="{ 'is-invalid': submitted &amp;&amp; registerForm.controls.password.errors }"  />
+                <div *ngIf="submitted &amp;&amp; registerForm.controls.password.errors" class="text-danger">
+                    <div *ngIf="registerForm.controls.password.errors.required">Password is required</div>
+                    <div *ngIf="registerForm.controls.password.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" (click)="register(email.value, password.value)">Register</button>
+            </div>
+
+            <div class="text-danger" *ngIf="isWrongCredentials">{{serverErrorMessage}}</div>
+
+        </form>
+
+    <div class="goTologin" routerLink="/login">Login</div>
+
+</div>

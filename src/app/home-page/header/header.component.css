@@ -1,0 +1,25 @@
+.top-bar-container {
+  line-height: 80px;
+  font-size: 14px;
+  text-align: right;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.top-bar-container span {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+fa-icon{
+  cursor: pointer;
+  font-size: 19px;
+  vertical-align: -2px;
+}
+
+.signout{
+  margin-right: 85px;
+}
+
+.globe{
+  margin-right: 10px;
+}

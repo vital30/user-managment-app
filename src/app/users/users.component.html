@@ -1,0 +1,16 @@
+<div class="users-container">
+    <div class="header">
+        <span>Users</span>
+        <p>If you want to get contact information to specific user, just select group and then select him from the list below</p>
+    </div>
+    <div class="users">
+        <div class="user" [class.active]="selectedIndex === i" 
+        (click)="setIndex(i, user)" *ngFor ="let user of users; let i = index">
+                <img src="{{user.avatar}}"/>
+            <span class="side-bar-menu-item-label" >{{user.first_name}} {{user.last_name}}</span>
+          </div>
+    </div>
+</div>
+<div class="user-container">
+    <app-user *ngIf="isUserSelected" [userDetails]="selectedUser"></app-user>
+</div>
